@@ -1,6 +1,6 @@
 import  { useState, useEffect } from 'react';
 import Bird from './bird/Bird';
-import Pipe from './pipe/Pipe';
+// import Pipe from './pipe/Pipe';
 import Button from '../Button/Button';
 import './Game.css';
 
@@ -35,9 +35,9 @@ function Game({ onGameRestart }) {
       </div>
       <div className="game-container">
         <Bird gameOver={handleGameOver} onScore={handleScore} />
+        {/* <Pipe onScore={handleScore} />
         <Pipe onScore={handleScore} />
-        <Pipe onScore={handleScore} />
-        <Pipe onScore={handleScore} />
+        <Pipe onScore={handleScore} /> */}
         {gameOver && <Button text="Restart" onClick={onGameRestart} />}
       </div>
     </div>
